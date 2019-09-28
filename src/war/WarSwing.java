@@ -141,21 +141,21 @@ public class WarSwing implements ActionListener{
 		    	int[] terroristStrength = new int[5];
 		    	int[] soldierEnergy = new int[5];
 		    	
-		    	terroristStrength[1] =  Integer.parseInt(terrorist1Strengthfield.getText());
-		    	terroristStrength[2] =  Integer.parseInt(terrorist2Strengthfield.getText());
-		    	terroristStrength[3] =  Integer.parseInt(terrorist3Strengthfield.getText());
-		    	terroristStrength[4] =  Integer.parseInt(terrorist4Strengthfield.getText());
-		    	terroristStrength[5] =  Integer.parseInt(terrorist5Strengthfield.getText());
+		    	terroristStrength[0] =  Integer.parseInt(terrorist1Strengthfield.getText());
+		    	terroristStrength[1] =  Integer.parseInt(terrorist2Strengthfield.getText());
+		    	terroristStrength[2] =  Integer.parseInt(terrorist3Strengthfield.getText());
+		    	terroristStrength[3] =  Integer.parseInt(terrorist4Strengthfield.getText());
+		    	terroristStrength[4] =  Integer.parseInt(terrorist5Strengthfield.getText());
 		    	
-		    	soldierEnergy[1] =  Integer.parseInt(soldier1Energyfield.getText());
-		    	soldierEnergy[2] =  Integer.parseInt(soldier2Energyfield.getText());
-		    	soldierEnergy[3] =  Integer.parseInt(soldier3Energyfield.getText());
-		    	soldierEnergy[4] =  Integer.parseInt(soldier4Energyfield.getText());
-		    	soldierEnergy[5] =  Integer.parseInt(soldier5Energyfield.getText());
+		    	soldierEnergy[0] =  Integer.parseInt(soldier1Energyfield.getText());
+		    	soldierEnergy[1] =  Integer.parseInt(soldier2Energyfield.getText());
+		    	soldierEnergy[2] =  Integer.parseInt(soldier3Energyfield.getText());
+		    	soldierEnergy[3] =  Integer.parseInt(soldier4Energyfield.getText());
+		    	soldierEnergy[4] =  Integer.parseInt(soldier5Energyfield.getText());
 		    	
 		    	WarCli cli = new WarCli(soldierEnergy,terroristStrength);
 		    	
-		    	Lbl.setText(cli.result);
+		    	output.setText(cli.result);
 	    }  
 	    });
 	}
